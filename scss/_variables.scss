@@ -1,0 +1,59 @@
+$colorprincipal:black;
+$colorsecundario:grey;
+
+/* map-get */
+
+$estilos: (
+  color: #bdbbbd,
+  centro: center,
+  tFuente: 15px,
+  0.5rem : 0.5rem,
+  
+);
+.sass2 {
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    padding: map-get($estilos, 0.5rem);
+    margin: map-get($estilos , 0.5rem );
+    font-size:map-get($estilos, tFuente);
+  }
+  
+
+
+
+
+/* extend */  
+
+.sass2{
+    background-color:rgb(242, 206, 245);
+    color: #381138;
+    
+}
+
+.sass2-especial{
+    @extend .sass2;
+    font-weight: bold;
+    
+}
+
+.sass3{
+  
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    padding: map-get($estilos, 0.5rem);
+    font-size:map-get($estilos, tFuente);
+  
+
+}
+
+
+
+/* pie de foto de pag nosotros */
+
+.piefoto{
+    font-size: large;
+    font-family: 'Montserrat', sans-serif;
+    color: rgb(44, 12, 44);
+}
+
+
